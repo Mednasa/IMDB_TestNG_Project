@@ -24,4 +24,24 @@ public class Onur_Elements extends ParentPage {
     @FindBy(id = "signInSubmit")
     public WebElement SignIn;
 
+    @FindBy(css = "[class='a-alert-content']  li:nth-child(1) span")
+    public WebElement emptyEmail;
+
+    @FindBy(css = "[class='a-alert-content']  li:nth-child(2) span")
+    public WebElement emptyPassword;
+
+    @FindBy(xpath = "(//span[contains(text(),'password')])[1]")
+    public WebElement onlyEmptyPassword;
+
+    @FindBy(css = "[class*='account-circle ipc-btn__icon']")
+    public WebElement iconBtn;
+
+    @FindBy(css="[id='navUserMenu-contents'] :nth-child(8) span")
+    public WebElement signOutBtn;
+
+    @FindBy(xpath = "(//span[(text()='Sign In')])[1]")
+    public WebElement signOutVerify;
+
+
+
 }
