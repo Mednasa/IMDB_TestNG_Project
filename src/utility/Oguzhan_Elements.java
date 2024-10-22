@@ -11,20 +11,34 @@ public class Oguzhan_Elements extends ParentPage {
 
     @FindBy(css = "[class='imdb-header-search__input searchTypeahead__input react-autosuggest__input']")
     public WebElement searchBox;
-    @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list anim-enter-done']//li[1]//a")
+    @FindBy(css = "[class='nav-search__search-submit searchform__submit']")
+    public WebElement searchButton;
+    @FindBy(xpath = "//div[text()='1980']")
     public WebElement listBox;
-    @FindBy(xpath = "(//span[text()='All'])[1]")
+    @FindBy(css = "[class='hero__primary-text']")
+    public WebElement starWarsAssert;
+    @FindBy(xpath = "//label[@data-testid='category-selector-button']")
     public WebElement allButton;
+    @FindBy(linkText = "Kötü Adam Olmak")
+    public WebElement breakingBadAssert;
     @FindBy(xpath = "(//span[text()='Titles'])")
     public WebElement titlesButton;
     @FindBy(xpath = "(//span[text()='TV Episodes'])")
     public WebElement tvEpisodesButton;
+    @FindBy(linkText = "Sons of Anarchy")
+    public WebElement sonsOfAnarcyAssert;
     @FindBy(xpath = "(//span[@class='ipc-list-item__text'])[51]")
     public WebElement celebsButton;
-    @FindBy(xpath = "(//span[text()='Companies'])")
+    @FindBy(linkText = "Tom Hanks")
+    public WebElement tomHanksAssert;
+    @FindBy(css = "[class='ipc-list searchCatSelector ipc-list--baseAlt'] li+li+li+li+li")
     public WebElement companiesButton;
     @FindBy(xpath = "(//span[text()='Keywords'])")
     public WebElement keywordsButton;
+
+
+
+
 
 
 }
