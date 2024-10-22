@@ -37,4 +37,10 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "//span[text()='TV Series']")
     public WebElement tvSeries;
 
+    @FindBy(css = "[class='sc-d1bbe268-0 eZzkdn ipc-chip ipc-chip--on-base']")
+    public WebElement filmNameBtn;
+
+    @FindBy(xpath = "//h3[text()='1. Terrifier 3']")
+    public WebElement filmName1;
+
 }

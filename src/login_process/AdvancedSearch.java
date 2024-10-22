@@ -30,10 +30,15 @@ public class AdvancedSearch extends BaseDriver {
         new Actions(BaseDriver.driver).doubleClick(m_imdb.SeeResultBtn).build().perform();
 
         m_imdb.verifyContainsText(m_imdb.filmName, "Baba");
+
+        m_imdb.waitUntilVisibilityOf(m_imdb.filmNameBtn);
+        m_imdb.myJsClick(m_imdb.filmNameBtn);
         m_imdb.myJsClick(m_imdb.titleType);
         m_imdb.myJsClick(m_imdb.movie);
         m_imdb.myJsClick(m_imdb.tvSeries);
         new Actions(BaseDriver.driver).doubleClick(m_imdb.SeeResultBtn).build().perform();
+
+        m_imdb.verifyContainsText(m_imdb.filmName1,"Terrifier 3");
 
 
     }
