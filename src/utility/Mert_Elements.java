@@ -16,4 +16,7 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "//span[text()='Advanced Search']")
     public WebElement AdvancedSearchBtn;
 
+    @FindBy(xpath = "(//label[@class='ipc-accordion__item__label ipc-accordion__item__label--indent-full'])[1]")
+    public WebElement TitleNameBtn;
+
 }

@@ -22,6 +22,7 @@ public class AdvancedSearch extends BaseDriver {
     public void AdvancedSearch(){
         m_imdb.myClick(m_imdb.AllBtn);
         m_imdb.myClick(m_imdb.AdvancedSearchBtn);
+        m_imdb.myClick(m_imdb.TitleNameBtn);
 
     }
 }
