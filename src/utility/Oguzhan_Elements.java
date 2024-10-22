@@ -19,12 +19,13 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement titlesButton;
     @FindBy(xpath = "(//span[text()='TV Episodes'])")
     public WebElement tvEpisodesButton;
-    @FindBy(xpath = "(//span[text()='Celebs'])")
+    @FindBy(xpath = "(//span[@class='ipc-list-item__text'])[51]")
     public WebElement celebsButton;
     @FindBy(xpath = "(//span[text()='Companies'])")
     public WebElement companiesButton;
     @FindBy(xpath = "(//span[text()='Keywords'])")
     public WebElement keywordsButton;
+
 
 }
 
