@@ -23,6 +23,7 @@ public class AdvancedSearch extends BaseDriver {
         m_imdb.myClick(m_imdb.AllBtn);
         m_imdb.myClick(m_imdb.AdvancedSearchBtn);
         m_imdb.myClick(m_imdb.TitleNameBtn);
+        m_imdb.mySendKeys(m_imdb.TitleNameInput, "The Godfather");
 
     }
 }

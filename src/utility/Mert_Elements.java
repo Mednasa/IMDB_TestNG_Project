@@ -19,4 +19,7 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "(//label[@class='ipc-accordion__item__label ipc-accordion__item__label--indent-full'])[1]")
     public WebElement TitleNameBtn;
 
+    @FindBy(xpath = "(//input[@class='ipc-textinput__input'])[1]")
+    public WebElement TitleNameInput;
+
 }
