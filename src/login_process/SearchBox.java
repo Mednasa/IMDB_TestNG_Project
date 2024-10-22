@@ -21,18 +21,28 @@ public class SearchBox extends BaseDriver {
     }
 
     @Test
-    public void searchBox(){
+    public void searchBox() {
 
         oz_imdb.mySendKeys(oz_imdb.searchBox, "Star Wars Empire Strikes Back");
-        oz_imdb.myClick(oz_imdb.listBox);
-        oz_imdb.myClick(oz_imdb.allButton);
+        oz_imdb.myJsClick(oz_imdb.listBox);
+        oz_imdb.verifyContainsText(oz_imdb.starWarsAssert, "Yıldız Savaşları: İmparator");
+        oz_imdb.myJsClick(oz_imdb.allButton);
         oz_imdb.myJsClick(oz_imdb.titlesButton);
-        oz_imdb.myClick(oz_imdb.titlesButton);
+        oz_imdb.mySendKeys(oz_imdb.searchBox, "Breaking Bad");
+        oz_imdb.myJsClick(oz_imdb.searchButton);
+        oz_imdb.verifyContainsText(oz_imdb.breakingBadAssert, "Kötü Adam Olmak");
+        oz_imdb.myJsClick(oz_imdb.titlesButton);
         oz_imdb.myJsClick(oz_imdb.tvEpisodesButton);
-        oz_imdb.myClick(oz_imdb.tvEpisodesButton);
-        oz_imdb.myClick(oz_imdb.celebsButton);
-        oz_imdb.myClick(oz_imdb.celebsButton);
-//        oz_imdb.myJsClick(oz_imdb.companiesButton);
+        oz_imdb.mySendKeys(oz_imdb.searchBox, "Sons Of Anarcy");
+        oz_imdb.myJsClick(oz_imdb.searchButton);
+        oz_imdb.verifyContainsText(oz_imdb.sonsOfAnarcyAssert, "Sons of Anarchy");
+        oz_imdb.myJsClick(oz_imdb.tvEpisodesButton);
+        oz_imdb.myJsClick(oz_imdb.celebsButton);
+        oz_imdb.mySendKeys(oz_imdb.searchBox, "Tom Hanks");
+        oz_imdb.myJsClick(oz_imdb.searchButton);
+        oz_imdb.verifyContainsText(oz_imdb.tomHanksAssert, "Tom Hanks");
+//        oz_imdb.myJsClick(oz_imdb.celebsButton);
+//        oz_imdb.myClick(oz_imdb.companiesButton);
 //        oz_imdb.myClick(oz_imdb.companiesButton);
 //        oz_imdb.myJsClick(oz_imdb.keywordsButton);
 
