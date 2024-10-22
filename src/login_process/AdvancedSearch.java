@@ -37,6 +37,7 @@ public class AdvancedSearch extends BaseDriver {
         m_imdb.myJsClick(m_imdb.movie);
         m_imdb.myJsClick(m_imdb.tvSeries);
         new Actions(BaseDriver.driver).doubleClick(m_imdb.SeeResultBtn).build().perform();
+        m_imdb.scrollToElement(m_imdb.filmName1);
 
         m_imdb.verifyContainsText(m_imdb.filmName1,"Terrifier 3");
 
