@@ -1,5 +1,7 @@
 package login_process;
 
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utility.BaseDriver;
@@ -20,10 +22,17 @@ public class AdvancedSearch extends BaseDriver {
 
     @Test
     public void AdvancedSearch(){
-        m_imdb.myClick(m_imdb.AllBtn);
+        m_imdb.myJsClick(m_imdb.AllBtn);
         m_imdb.myClick(m_imdb.AdvancedSearchBtn);
-        m_imdb.myClick(m_imdb.TitleNameBtn);
+        m_imdb.waitUntilElementToBeClickable(m_imdb.TitleNameBtn);
+        m_imdb.myJsClick(m_imdb.TitleNameBtn);
         m_imdb.mySendKeys(m_imdb.TitleNameInput, "The Godfather");
+        new Actions(BaseDriver.driver).doubleClick(m_imdb.SeeResultBtn).build().perform();
+
+        m_imdb.verifyContainsText(m_imdb.filmName, "Baba");
+        m_imdb.myJsClick(m_imdb.titleType);
+        m_imdb.myJsClick(m_imdb.movie);
+
 
     }
 }

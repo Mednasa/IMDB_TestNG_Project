@@ -10,7 +10,7 @@ public class Mert_Elements extends ParentPage {
         PageFactory.initElements(BaseDriver.driver, this);
     }
 
-    @FindBy(xpath = "(//*[@class='ipc-icon ipc-icon--arrow-drop-down ipc-btn__icon ipc-btn__icon--post searchCatSelector-button-post-icon'])[1]")
+    @FindBy(xpath = "//label[@data-testid='category-selector-button']")
     public WebElement AllBtn;
 
     @FindBy(xpath = "//span[text()='Advanced Search']")
@@ -21,5 +21,17 @@ public class Mert_Elements extends ParentPage {
 
     @FindBy(xpath = "(//input[@class='ipc-textinput__input'])[1]")
     public WebElement TitleNameInput;
+
+    @FindBy(xpath = "//span[text()='See results']")
+    public WebElement SeeResultBtn;
+
+    @FindBy(xpath = "//h3[text()='1. Baba']")
+    public WebElement filmName;
+
+    @FindBy(xpath = "//div[text()='Title type']")
+    public WebElement titleType;
+
+    @FindBy(xpath = "//span[text()='Movie']")
+    public WebElement movie;
 
 }
