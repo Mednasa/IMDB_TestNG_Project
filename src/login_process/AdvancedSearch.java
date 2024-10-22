@@ -32,6 +32,8 @@ public class AdvancedSearch extends BaseDriver {
         m_imdb.verifyContainsText(m_imdb.filmName, "Baba");
         m_imdb.myJsClick(m_imdb.titleType);
         m_imdb.myJsClick(m_imdb.movie);
+        m_imdb.myJsClick(m_imdb.tvSeries);
+        new Actions(BaseDriver.driver).doubleClick(m_imdb.SeeResultBtn).build().perform();
 
 
     }
