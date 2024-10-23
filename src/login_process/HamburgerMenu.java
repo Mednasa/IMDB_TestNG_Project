@@ -25,6 +25,7 @@ public class HamburgerMenu extends BaseDriver {
     @Test
     public void hamburgerMenu() {
 
+        // Movies
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
         oz_imdb.myClick(oz_imdb.releaseCalendarButton);
         BaseDriver.driver.navigate().back();
@@ -48,6 +49,8 @@ public class HamburgerMenu extends BaseDriver {
         BaseDriver.driver.navigate().back();
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
         oz_imdb.myJsClick(oz_imdb.indiaMovieSpotlightButton);
+
+        // TV Shows
         BaseDriver.driver.navigate().back();
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
         oz_imdb.myJsClick(oz_imdb.whatsonTVStreamingButton);
@@ -57,6 +60,27 @@ public class HamburgerMenu extends BaseDriver {
         BaseDriver.driver.navigate().back();
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
         oz_imdb.myJsClick(oz_imdb.mostPopularTVShowsButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.browseTVShowsbyGenreButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.tVNewsButton);
+
+        // Awards & Events
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.oscarsButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.halloweenButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.hispanicHeritageMonthButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+
+
 
 
 

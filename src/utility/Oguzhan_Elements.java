@@ -72,6 +72,16 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement top250TVShowsButton;
     @FindBy(linkText = "Most Popular TV Shows")
     public WebElement mostPopularTVShowsButton;
+    @FindBy(linkText = "Browse TV Shows by Genre")
+    public WebElement browseTVShowsbyGenreButton;
+    @FindBy(linkText = "TV News")
+    public WebElement tVNewsButton;
+    @FindBy(linkText = "Oscars")
+    public WebElement oscarsButton;
+    @FindBy(linkText = "Halloween")
+    public WebElement halloweenButton;
+    @FindBy(linkText = "Hispanic Heritage Month")
+    public WebElement hispanicHeritageMonthButton;
 
 
 
