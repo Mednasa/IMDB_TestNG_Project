@@ -82,6 +82,12 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement halloweenButton;
     @FindBy(linkText = "Hispanic Heritage Month")
     public WebElement hispanicHeritageMonthButton;
+    @FindBy(linkText = "MAMI")
+    public WebElement mamiButton;
+    @FindBy(linkText = "STARmeter Awards")
+    public WebElement sTARmeterAwardsButton;
+    @FindBy(linkText = "Awards Central")
+    public WebElement awardsCentralButton;
 
 
 
