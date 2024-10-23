@@ -73,4 +73,10 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "//span[text()='Thriller']")
     public WebElement genreThriller;
 
+    @FindBy(xpath = "//h3[text()='7. The Perfection']")
+    public WebElement genreFilm;
+
+    @FindBy(xpath = "//div[text()='When troubled musical prodigy Charlotte seeks out Elizabeth, the new star pupil of her former school, the encounter sends both musicians down a sinister path with shocking consequences.']")
+    public WebElement genreMusicFilm;
+
 }

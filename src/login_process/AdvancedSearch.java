@@ -54,6 +54,13 @@ public class AdvancedSearch extends BaseDriver {
 
         m_imdb.myJsClick(m_imdb.closeRatingBtn);
         m_imdb.myJsClick(m_imdb.genreBtn);
+        m_imdb.myJsClick(m_imdb.genreMusic);
+        m_imdb.myJsClick(m_imdb.genreThriller);
+        m_imdb.myJsClick(m_imdb.SeeResultBtn);
+
+        m_imdb.verifyContainsText(m_imdb.genreFilm,"The Perfection");
+        m_imdb.verifyContainsText(m_imdb.genreMusicFilm,"musical");
+
 
 
 
