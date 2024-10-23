@@ -98,6 +98,18 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement mostPopularCelebsButton;
     @FindBy(linkText = "Celebrity News")
     public WebElement celebrityNewsButton;
+    @FindBy(linkText = "What to Watch")
+    public WebElement whattoWatchButton;
+    @FindBy(linkText = "Latest Trailers")
+    public WebElement latestTrailersButton;
+    @FindBy(linkText = "IMDb Originals")
+    public WebElement iMDbOriginalsButton;
+    @FindBy(linkText = "IMDb Picks")
+    public WebElement iMDbPicksButton;
+    @FindBy(linkText = "IMDb Spotlight")
+    public WebElement iMDbSpotlightButton;
+    @FindBy(linkText = "IMDb Podcasts")
+    public WebElement iMDbPodcastsButton;
 
 
 
