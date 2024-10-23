@@ -92,6 +92,12 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement festivalCentralButton;
     @FindBy(linkText = "All Events")
     public WebElement allEventsButton;
+    @FindBy(linkText = "Born Today")
+    public WebElement bornTodayButton;
+    @FindBy(linkText = "Most Popular Celebs")
+    public WebElement mostPopularCelebsButton;
+    @FindBy(linkText = "Celebrity News")
+    public WebElement celebrityNewsButton;
 
 
 
