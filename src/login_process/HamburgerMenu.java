@@ -125,6 +125,17 @@ public class HamburgerMenu extends BaseDriver {
         // Community
         BaseDriver.driver.navigate().back();
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.helpCenterButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.contributorZoneButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.pollsButton);
+
+        // Recently viewed
+
+
 
 
 

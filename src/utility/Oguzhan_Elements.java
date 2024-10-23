@@ -110,6 +110,13 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement iMDbSpotlightButton;
     @FindBy(linkText = "IMDb Podcasts")
     public WebElement iMDbPodcastsButton;
+    @FindBy(linkText = "Help Center")
+    public WebElement helpCenterButton;
+    @FindBy(linkText = "Contributor Zone")
+    public WebElement contributorZoneButton;
+    @FindBy(linkText = "Polls")
+    public WebElement pollsButton;
+
 
 
 
