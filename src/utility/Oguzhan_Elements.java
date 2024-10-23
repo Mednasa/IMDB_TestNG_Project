@@ -9,6 +9,8 @@ public class Oguzhan_Elements extends ParentPage {
         PageFactory.initElements(BaseDriver.driver, this);
     }
 
+    //SearchBox
+
     @FindBy(css = "[class='imdb-header-search__input searchTypeahead__input react-autosuggest__input']")
     public WebElement searchBox;
     @FindBy(css = "[class='nav-search__search-submit searchform__submit']")
@@ -44,12 +46,7 @@ public class Oguzhan_Elements extends ParentPage {
     @FindBy(linkText = "dark comedy")
     public WebElement comedyAssert;
 
-
-
-
-
-
-
+    //HamburgerMenü
 
 
 

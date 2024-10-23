@@ -8,10 +8,10 @@ import utility.ParentPage;
 
 public class SearchBox extends BaseDriver {
 
-    ParentPage pp =new ParentPage();
+    ParentPage pp = new ParentPage();
 
     @BeforeClass
-    public void Login(){
+    public void Login() {
 
         o_imdb.myClick(o_imdb.SignInBtn);
         o_imdb.myClick(o_imdb.SignInWithIMDb);
