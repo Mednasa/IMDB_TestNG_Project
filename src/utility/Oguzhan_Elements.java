@@ -88,6 +88,12 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement sTARmeterAwardsButton;
     @FindBy(linkText = "Awards Central")
     public WebElement awardsCentralButton;
+    @FindBy(linkText = "Festival Central")
+    public WebElement festivalCentralButton;
+    @FindBy(linkText = "All Events")
+    public WebElement allEventsButton;
+
+
 
 
 

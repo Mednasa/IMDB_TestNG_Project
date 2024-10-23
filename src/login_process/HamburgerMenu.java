@@ -86,6 +86,14 @@ public class HamburgerMenu extends BaseDriver {
         oz_imdb.myJsClick(oz_imdb.awardsCentralButton);
         BaseDriver.driver.navigate().back();
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.festivalCentralButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.allEventsButton);
+
+        // Celebs
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
 
 
 
