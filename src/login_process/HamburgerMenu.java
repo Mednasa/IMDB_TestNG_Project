@@ -179,6 +179,7 @@ public class HamburgerMenu extends BaseDriver {
         oz_imdb.addRecentlyWatchlist.isDisplayed();
         oz_imdb.myJsClick(oz_imdb.addRecentlyWatchlist);
         oz_imdb.removeRecentlyWatchlist.isDisplayed();
+        oz_imdb.myJsClick(oz_imdb.removeRecentlyWatchlist);
 
 
 
