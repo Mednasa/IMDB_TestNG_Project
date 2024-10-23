@@ -66,6 +66,12 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement movieNewsButton;
     @FindBy(linkText = "India Movie Spotlight")
     public WebElement indiaMovieSpotlightButton;
+    @FindBy(linkText = "What's on TV & Streaming")
+    public WebElement whatsonTVStreamingButton;
+    @FindBy(linkText = "Top 250 TV Shows")
+    public WebElement top250TVShowsButton;
+    @FindBy(linkText = "Most Popular TV Shows")
+    public WebElement mostPopularTVShowsButton;
 
 
 
