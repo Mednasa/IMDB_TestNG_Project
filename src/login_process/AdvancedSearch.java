@@ -61,6 +61,23 @@ public class AdvancedSearch extends BaseDriver {
         m_imdb.verifyContainsText(m_imdb.genreFilm,"The Perfection");
         m_imdb.verifyContainsText(m_imdb.genreMusicFilm,"musical");
 
+        m_imdb.myJsClick(m_imdb.closeGenreMusic);
+        m_imdb.myJsClick(m_imdb.closeGenreThriller);
+        m_imdb.myJsClick(m_imdb.awardsRecognitionBtn);
+        m_imdb.myJsClick(m_imdb.oscarWinningBtn);
+        m_imdb.myJsClick(m_imdb.goldenGlobeWinningBtn);
+        m_imdb.myJsClick(m_imdb.SeeResultBtn);
+        m_imdb.myJsClick(m_imdb.firstFilm);
+
+        m_imdb.verifyContainsText(m_imdb.wonOscar,"Won 2 Oscars");
+
+        BaseDriver.driver.navigate().back();
+        m_imdb.myJsClick(m_imdb.companiesBtn);
+        m_imdb.myJsClick(m_imdb.waltDisney);
+        m_imdb.myJsClick(m_imdb.SeeResultBtn);
+
+        m_imdb.verifyContainsText(m_imdb.firstFilmOfWaltDisney,"1. Rivals");
+
 
 
 

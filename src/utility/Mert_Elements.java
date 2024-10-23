@@ -79,4 +79,34 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "//div[text()='When troubled musical prodigy Charlotte seeks out Elizabeth, the new star pupil of her former school, the encounter sends both musicians down a sinister path with shocking consequences.']")
     public WebElement genreMusicFilm;
 
+    @FindBy(xpath = "(//span[text()='Music'])[1]")
+    public WebElement closeGenreMusic;
+
+    @FindBy(xpath = "(//span[text()='Thriller'])[1]")
+    public WebElement closeGenreThriller;
+
+    @FindBy(xpath = "//div[text()='Awards & recognition']")
+    public WebElement awardsRecognitionBtn;
+
+    @FindBy(xpath = "//span[text()='Oscar-Winning']")
+    public WebElement oscarWinningBtn;
+
+    @FindBy(xpath = "//span[text()='Golden Globe-Winning']")
+    public WebElement goldenGlobeWinningBtn;
+
+    @FindBy(xpath = "//h3[text()='1. Joker']")
+    public WebElement firstFilm;
+
+    @FindBy(linkText = "Won 2 Oscars")
+    public WebElement wonOscar;
+
+    @FindBy(xpath = "//div[text()='Companies']")
+    public WebElement companiesBtn;
+
+    @FindBy(xpath = "//span[text()='Walt Disney (US)']")
+    public WebElement waltDisney;
+
+    @FindBy(xpath = "//h3[text()='1. Rivals']")
+    public WebElement firstFilmOfWaltDisney;
+
 }
