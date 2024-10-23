@@ -44,6 +44,16 @@ public class AdvancedSearch extends BaseDriver {
         m_imdb.myJsClick(m_imdb.movieBtn);
         m_imdb.myJsClick(m_imdb.tvSeriesBtn);
         m_imdb.myJsClick(m_imdb.imdbRatings);
+        m_imdb.myJsClick(m_imdb.minRatings);
+        m_imdb.mySendKeys(m_imdb.minRatings, "5");
+        m_imdb.myJsClick(m_imdb.maxRatings);
+        m_imdb.mySendKeys(m_imdb.maxRatings, "10");
+        m_imdb.myJsClick(m_imdb.SeeResultBtn);
+
+        m_imdb.verifyContainsText(m_imdb.firstMovieRating, "8.8");
+
+        m_imdb.myJsClick(m_imdb.closeRatingBtn);
+        m_imdb.myJsClick(m_imdb.genreBtn);
 
 
 

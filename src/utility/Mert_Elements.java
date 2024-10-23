@@ -52,10 +52,25 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "//div[text()='IMDb ratings']")
     public WebElement imdbRatings;
 
-    @FindBy(xpath = "[name='imdb-ratings-max-input']")
+    @FindBy(css = "[name='imdb-ratings-max-input']")
     public WebElement minRatings;
 
-    @FindBy(xpath = "[name='imdb-ratings-min-input']")
+    @FindBy(css = "[name='imdb-ratings-min-input']")
     public WebElement maxRatings;
+
+    @FindBy(xpath = "//span[text()='8.8']")
+    public WebElement firstMovieRating;
+
+    @FindBy(css = "[class='sc-d1bbe268-0 eZzkdn ipc-chip ipc-chip--on-base']")
+    public WebElement closeRatingBtn;
+
+    @FindBy(xpath = "//div[text()='Genre']")
+    public WebElement genreBtn;
+
+    @FindBy(xpath = "//span[text()='Music']")
+    public WebElement genreMusic;
+
+    @FindBy(xpath = "//span[text()='Thriller']")
+    public WebElement genreThriller;
 
 }
