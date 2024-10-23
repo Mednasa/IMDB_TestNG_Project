@@ -27,14 +27,27 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement tvEpisodesButton;
     @FindBy(linkText = "Sons of Anarchy")
     public WebElement sonsOfAnarcyAssert;
-    @FindBy(xpath = "(//span[@class='ipc-list-item__text'])[51]")
+    @FindBy(css = "[class='ipc-menu mdc-menu ipc-menu--not-initialized ipc-menu--on-baseAlt ipc-menu--anchored ipc-menu--open ipc-menu--expand-from-top-left searchCatSelector-menu ipc-menu--anim-appear-done ipc-menu--anim-enter-done'] ul li+li+li+li")
     public WebElement celebsButton;
+    @FindBy(css = "[class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--on-textPrimary ipc-text-button searchCatSelector-button searchCatSelector__opener searchform__categories nav-search-form__categories'] span")
+    public WebElement celebsButton2;
     @FindBy(linkText = "Tom Hanks")
     public WebElement tomHanksAssert;
     @FindBy(css = "[class='ipc-list searchCatSelector ipc-list--baseAlt'] li+li+li+li+li")
     public WebElement companiesButton;
+    @FindBy(css = "[class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--on-textPrimary ipc-text-button searchCatSelector-button searchCatSelector__opener searchform__categories nav-search-form__categories'] span")
+    public WebElement companiesButton2;
+    @FindBy(linkText = "Warner Bros.")
+    public WebElement warnerBrosAssert;
     @FindBy(xpath = "(//span[text()='Keywords'])")
     public WebElement keywordsButton;
+    @FindBy(linkText = "dark comedy")
+    public WebElement comedyAssert;
+
+
+
+
+
 
 
 
