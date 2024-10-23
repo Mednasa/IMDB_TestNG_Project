@@ -41,6 +41,11 @@ public class AdvancedSearch extends BaseDriver {
 
         m_imdb.verifyContainsText(m_imdb.filmName1,"Terrifier 3");
 
+        m_imdb.myJsClick(m_imdb.movieBtn);
+        m_imdb.myJsClick(m_imdb.tvSeriesBtn);
+        m_imdb.myJsClick(m_imdb.imdbRatings);
+
+
 
     }
 }

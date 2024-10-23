@@ -49,4 +49,13 @@ public class Mert_Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='TV Series'])[1]")
     public WebElement tvSeriesBtn;
 
+    @FindBy(xpath = "//div[text()='IMDb ratings']")
+    public WebElement imdbRatings;
+
+    @FindBy(xpath = "[name='imdb-ratings-max-input']")
+    public WebElement minRatings;
+
+    @FindBy(xpath = "[name='imdb-ratings-min-input']")
+    public WebElement maxRatings;
+
 }
