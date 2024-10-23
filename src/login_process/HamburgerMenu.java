@@ -28,6 +28,17 @@ public class HamburgerMenu extends BaseDriver {
         oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
         oz_imdb.myClick(oz_imdb.releaseCalendarButton);
         BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.top250MoviesButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.mostPopularMoviesButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.browseMoviesbyGenreButton);
+        BaseDriver.driver.navigate().back();
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myJsClick(oz_imdb.topBoxOfficeButton);
 
 
 

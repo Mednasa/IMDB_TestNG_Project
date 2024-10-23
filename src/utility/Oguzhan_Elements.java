@@ -54,6 +54,12 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement releaseCalendarButton;
     @FindBy(linkText = "Release Calendar")
     public WebElement top250MoviesButton;
+    @FindBy(linkText = "Most Popular Movies")
+    public WebElement mostPopularMoviesButton;
+    @FindBy(linkText = "Browse Movies by Genre")
+    public WebElement browseMoviesbyGenreButton;
+    @FindBy(linkText = "Top Box Office")
+    public WebElement topBoxOfficeButton;
 
 
 
