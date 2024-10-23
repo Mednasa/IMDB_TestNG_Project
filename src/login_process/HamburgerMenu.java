@@ -1,5 +1,6 @@
 package login_process;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utility.BaseDriver;
@@ -23,6 +24,12 @@ public class HamburgerMenu extends BaseDriver {
 
     @Test
     public void hamburgerMenu() {
+
+        oz_imdb.myClick(oz_imdb.hamburgerMenuButton);
+        oz_imdb.myClick(oz_imdb.releaseCalendarButton);
+        BaseDriver.driver.navigate().back();
+
+
 
 
     }

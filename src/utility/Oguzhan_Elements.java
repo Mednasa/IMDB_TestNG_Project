@@ -48,6 +48,12 @@ public class Oguzhan_Elements extends ParentPage {
 
     //HamburgerMenü
 
+    @FindBy(css = "[class='ipc-responsive-button__text']")
+    public WebElement hamburgerMenuButton;
+    @FindBy(linkText = "Release Calendar")
+    public WebElement releaseCalendarButton;
+    @FindBy(linkText = "Release Calendar")
+    public WebElement top250MoviesButton;
 
 
 
