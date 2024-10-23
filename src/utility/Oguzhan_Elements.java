@@ -60,6 +60,13 @@ public class Oguzhan_Elements extends ParentPage {
     public WebElement browseMoviesbyGenreButton;
     @FindBy(linkText = "Top Box Office")
     public WebElement topBoxOfficeButton;
+    @FindBy(linkText = "Showtimes & Tickets")
+    public WebElement showtimesTicketsButtonButton;
+    @FindBy(linkText = "Movie News")
+    public WebElement movieNewsButton;
+    @FindBy(linkText = "India Movie Spotlight")
+    public WebElement indiaMovieSpotlightButton;
+
 
 
 
