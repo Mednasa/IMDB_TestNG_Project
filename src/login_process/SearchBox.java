@@ -41,10 +41,16 @@ public class SearchBox extends BaseDriver {
         oz_imdb.mySendKeys(oz_imdb.searchBox, "Tom Hanks");
         oz_imdb.myJsClick(oz_imdb.searchButton);
         oz_imdb.verifyContainsText(oz_imdb.tomHanksAssert, "Tom Hanks");
-//        oz_imdb.myJsClick(oz_imdb.celebsButton);
-//        oz_imdb.myClick(oz_imdb.companiesButton);
-//        oz_imdb.myClick(oz_imdb.companiesButton);
-//        oz_imdb.myJsClick(oz_imdb.keywordsButton);
+        oz_imdb.myJsClick(oz_imdb.celebsButton2);
+        oz_imdb.myClick(oz_imdb.companiesButton);
+        oz_imdb.mySendKeys(oz_imdb.searchBox, "Warner Bros.");
+        oz_imdb.myJsClick(oz_imdb.searchButton);
+        oz_imdb.verifyContainsText(oz_imdb.warnerBrosAssert, "Warner Bros.");
+        oz_imdb.myJsClick(oz_imdb.companiesButton2);
+        oz_imdb.myJsClick(oz_imdb.keywordsButton);
+        oz_imdb.mySendKeys(oz_imdb.searchBox, "Comedy");
+        oz_imdb.myJsClick(oz_imdb.searchButton);
+        oz_imdb.verifyContainsText(oz_imdb.comedyAssert,"dark comedy");
 
 
 
