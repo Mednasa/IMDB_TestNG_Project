@@ -168,7 +168,7 @@ public class ParentPage {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public void waitUntilstalenessOf(WebElement element) {
+    public void waitUntilStalenessOf(WebElement element) {
         wait.until(ExpectedConditions.stalenessOf(element));
     }
 

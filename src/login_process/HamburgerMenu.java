@@ -1,7 +1,5 @@
 package login_process;
 
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utility.BaseDriver;
