@@ -9,7 +9,7 @@ public class Onur_Elements extends ParentPage {
         PageFactory.initElements(BaseDriver.driver, this);
     }
 
-    @FindBy(css = "[class='nav__userMenu navbar__user sc-jHNiPY jEwaYR']>a span")
+    @FindBy(css = "[class*='nav__userMenu navbar__user']>a span")
     public WebElement SignInBtn;
 
     @FindBy(xpath = "//*[text()='Sign in with IMDb']")
@@ -42,6 +42,6 @@ public class Onur_Elements extends ParentPage {
     @FindBy(xpath = "(//span[(text()='Sign In')])[1]")
     public WebElement signOutVerify;
 
-
-
+    @FindBy(css = "[class*='navbar__user-menu-toggle--desktop']")
+    public WebElement accountName;
 }
