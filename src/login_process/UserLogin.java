@@ -14,6 +14,7 @@ public class UserLogin extends BaseDriver {
         o_imdb.mySendKeys(o_imdb.emailPlc, ConfigReader.getProperty("email"));
         o_imdb.mySendKeys(o_imdb.passwordPlc, ConfigReader.getProperty("password"));
         o_imdb.myClick(o_imdb.SignIn);
+        o_imdb.verifyContainsText(o_imdb.accountName,ConfigReader.getProperty("accountName"));
 
     }
 
